@@ -6,9 +6,9 @@ export default async function handler(req, res) {
   }
 
   const PAYPAL_API = "https://api-3t.sandbox.paypal.com/nvp";
-  const PAYPAL_USER = "YourAPIUsername";
-  const PAYPAL_PWD = "YourAPIPassword";
-  const PAYPAL_SIGNATURE = "YourAPISignature";
+  const PAYPAL_USER = "testpp5678_api1.gmail.com";
+  const PAYPAL_PWD = "VB6XFM4ECSJJWC3Z";
+  const PAYPAL_SIGNATURE = "AtrtuiK97tX1CiU8WNBpJkGLm2U9A8PbX9onAIILKx-eushGlrAM2BIF";
   const RETURN_URL = "https://your-vercel-domain.vercel.app/api/success";
   const CANCEL_URL = "https://your-vercel-domain.vercel.app/api/cancel";
 
