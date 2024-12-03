@@ -5,12 +5,12 @@ export default async function handler(req, res) {
     return res.status(405).send("Method Not Allowed");
   }
 
-  const PAYPAL_API = process.env.PAYPAL_ENDPOINT;
-  const PAYPAL_USER = process.env.PAYPAL_USER;
-  const PAYPAL_PWD = process.env.PAYPAL_PWD;
-  const PAYPAL_SIGNATURE = process.env.PAYPAL_SIGNATURE;
-  const RETURN_URL = process.env.PAYPAL_RETURN_URL;
-  const CANCEL_URL = process.env.PAYPAL_CANCEL_URL;
+  const PAYPAL_API = "https://api-3t.sandbox.paypal.com/nvp";
+  const PAYPAL_USER = "YourAPIUsername";
+  const PAYPAL_PWD = "YourAPIPassword";
+  const PAYPAL_SIGNATURE = "YourAPISignature";
+  const RETURN_URL = "https://your-vercel-domain.vercel.app/api/success";
+  const CANCEL_URL = "https://your-vercel-domain.vercel.app/api/cancel";
 
   try {
     const params = new URLSearchParams({

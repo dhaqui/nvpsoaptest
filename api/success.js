@@ -1,10 +1,10 @@
 const axios = require("axios");
 
 export default async function handler(req, res) {
-  const PAYPAL_API = process.env.PAYPAL_ENDPOINT;
-  const PAYPAL_USER = process.env.PAYPAL_USER;
-  const PAYPAL_PWD = process.env.PAYPAL_PWD;
-  const PAYPAL_SIGNATURE = process.env.PAYPAL_SIGNATURE;
+  const PAYPAL_API = "https://api-3t.sandbox.paypal.com/nvp";
+  const PAYPAL_USER = "YourAPIUsername";
+  const PAYPAL_PWD = "YourAPIPassword";
+  const PAYPAL_SIGNATURE = "YourAPISignature";
 
   try {
     const token = req.query.token;
